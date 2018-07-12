@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="frV-da-mzB">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="mUB-pL-TMO">
+            <objects>
+                <viewController id="gIH-hU-5zD" customClass="LoginViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hUl-AK-SNs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKP-xo-O6g">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Ahe-2b-DlZ">
+                                        <rect key="frame" x="68" y="80" width="240" height="105.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makestagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axk-jT-YbB">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="44.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="37"/>
+                                                <color key="textColor" name="tcOffWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to see photos and videos from your friends." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9B-Uh-fJE">
+                                                <rect key="frame" x="0.0" y="69.666666666666657" width="240" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" name="tcOffWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="gW9-e1-EH6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.41568627450980389" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="iN4-Pc-f80"/>
+                                    <constraint firstItem="Ahe-2b-DlZ" firstAttribute="centerX" secondItem="mKP-xo-O6g" secondAttribute="centerX" id="qDD-G9-meI"/>
+                                    <constraint firstItem="Ahe-2b-DlZ" firstAttribute="centerY" secondItem="mKP-xo-O6g" secondAttribute="centerY" id="zbe-21-2FM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml2-U0-D12">
+                                <rect key="frame" x="35" y="290" width="305" height="44"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.59215686274509804" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EWo-58-d9W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Register or Login"/>
+                                <connections>
+                                    <action selector="loginBtn:" destination="gIH-hU-5zD" eventType="touchUpInside" id="Oa4-FN-h3N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="tcOffWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ml2-U0-D12" firstAttribute="top" secondItem="mKP-xo-O6g" secondAttribute="bottom" constant="25" id="7hP-f9-gOv"/>
+                            <constraint firstItem="mKP-xo-O6g" firstAttribute="top" secondItem="hUl-AK-SNs" secondAttribute="top" id="Loz-Me-iIk"/>
+                            <constraint firstItem="Ml2-U0-D12" firstAttribute="leading" secondItem="Sn0-JH-SA7" secondAttribute="leading" constant="35" id="O7n-kv-rfG"/>
+                            <constraint firstItem="Sn0-JH-SA7" firstAttribute="trailing" secondItem="mKP-xo-O6g" secondAttribute="trailing" id="YnA-Wm-sZf"/>
+                            <constraint firstItem="Sn0-JH-SA7" firstAttribute="trailing" secondItem="Ml2-U0-D12" secondAttribute="trailing" constant="35" id="mzz-BY-5vg"/>
+                            <constraint firstItem="mKP-xo-O6g" firstAttribute="leading" secondItem="Sn0-JH-SA7" secondAttribute="leading" id="sUD-r7-i0I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sn0-JH-SA7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gdm-8R-7Xg"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="Ml2-U0-D12" id="McL-KU-plj"/>
+                        <segue destination="qqj-H2-Lpd" kind="show" identifier="toCreateUsername" id="7RS-du-IMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9f-yJ-erm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="123.39901477832512"/>
+        </scene>
+        <!--Create Username View Controller-->
+        <scene sceneID="GOT-Fr-0XQ">
+            <objects>
+                <viewController id="qqj-H2-Lpd" customClass="CreateUsernameViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3NW-ch-U9P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAE-Px-1jh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3i9-sj-pv0">
+                                        <rect key="frame" x="58" y="62.666666666666671" width="260" height="139.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-mw-1PZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="33.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="28"/>
+                                                <color key="textColor" name="tcOffWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a username so your friends can find you. You can change this later." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV9-8h-Mxo">
+                                                <rect key="frame" x="0.0" y="53.666666666666657" width="260" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" name="tcOffWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dZp-kH-xmI">
+                                                <rect key="frame" x="0.0" y="109.66666666666669" width="260" height="30"/>
+                                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dZp-kH-xmI" firstAttribute="centerX" secondItem="3i9-sj-pv0" secondAttribute="centerX" id="1Nk-cE-szC"/>
+                                            <constraint firstItem="a5M-mw-1PZ" firstAttribute="centerX" secondItem="3i9-sj-pv0" secondAttribute="centerX" id="48b-7v-9G0"/>
+                                            <constraint firstItem="LV9-8h-Mxo" firstAttribute="centerX" secondItem="3i9-sj-pv0" secondAttribute="centerX" id="I4D-Sj-A4M"/>
+                                            <constraint firstAttribute="width" constant="260" id="wg3-hC-Dgb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21960784310000001" green="0.59215686270000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3i9-sj-pv0" firstAttribute="centerX" secondItem="WAE-Px-1jh" secondAttribute="centerX" id="4XE-dY-2hh"/>
+                                    <constraint firstAttribute="height" constant="265" id="KxC-eb-LAv"/>
+                                    <constraint firstItem="3i9-sj-pv0" firstAttribute="centerY" secondItem="WAE-Px-1jh" secondAttribute="centerY" id="z4X-Mv-yfE"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5i-cU-JdZ">
+                                <rect key="frame" x="35" y="290" width="305" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.41568627450000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ago-Ua-oSZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" name="tcOffWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtnTapped:" destination="qqj-H2-Lpd" eventType="touchUpInside" id="9xQ-1f-YNj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="tcOffWhite"/>
+                        <constraints>
+                            <constraint firstItem="u5i-cU-JdZ" firstAttribute="top" secondItem="WAE-Px-1jh" secondAttribute="bottom" constant="25" id="0hU-DA-f8d"/>
+                            <constraint firstItem="u5i-cU-JdZ" firstAttribute="leading" secondItem="VHX-9w-i3x" secondAttribute="leading" constant="35" id="49w-Xc-W2X"/>
+                            <constraint firstItem="WAE-Px-1jh" firstAttribute="trailing" secondItem="VHX-9w-i3x" secondAttribute="trailing" id="Hu9-1A-b9x"/>
+                            <constraint firstItem="VHX-9w-i3x" firstAttribute="trailing" secondItem="u5i-cU-JdZ" secondAttribute="trailing" constant="35" id="JdG-f1-mCr"/>
+                            <constraint firstItem="WAE-Px-1jh" firstAttribute="leading" secondItem="VHX-9w-i3x" secondAttribute="leading" id="cWu-NK-1Ts"/>
+                            <constraint firstItem="WAE-Px-1jh" firstAttribute="top" secondItem="3NW-ch-U9P" secondAttribute="top" id="f9L-Dh-rv3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VHX-9w-i3x"/>
+                    </view>
+                    <connections>
+                        <outlet property="usernameTextField" destination="dZp-kH-xmI" id="2h4-dS-mgA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OnF-dD-JpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="122.66009852216749"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PTS-qY-q03">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="frV-da-mzB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yc5-zh-Cg2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gIH-hU-5zD" kind="relationship" relationship="rootViewController" id="m5M-xd-fkc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Akm-tg-ijp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="123.39901477832512"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="tcOffWhite">
+            <color red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcOffWhite">
+            <color red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcOffWhite">
+            <color red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcOffWhite">
+            <color red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcOffWhite">
+            <color red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcOffWhite">
+            <color red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
