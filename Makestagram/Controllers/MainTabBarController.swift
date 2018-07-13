@@ -9,14 +9,16 @@
 import Foundation
 import UIKit
 
-let photoHelper = MGPhotoHelper()
 
 class MainTabBarController: UITabBarController {
+    
+    let photoHelper = MGPhotoHelper()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         photoHelper.completitionHandler = {image in
-            print("Handle image")
+            PostService.create(for: image)
         }
         
         delegate = self

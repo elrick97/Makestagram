@@ -24,6 +24,12 @@
 		5FECF7CC20F7D6BA002CC96A /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7CB20F7D6BA002CC96A /* FindFriendsViewController.swift */; };
 		5FECF7CE20F80238002CC96A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7CD20F80238002CC96A /* MainTabBarController.swift */; };
 		5FECF7D020F80579002CC96A /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7CF20F80579002CC96A /* MGPhotoHelper.swift */; };
+		5FECF7D220F83465002CC96A /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7D120F83465002CC96A /* StorageService.swift */; };
+		5FECF7D420F835DD002CC96A /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7D320F835DD002CC96A /* PostService.swift */; };
+		5FECF7D620F83774002CC96A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7D520F83774002CC96A /* Post.swift */; };
+		5FECF7D820F83BBB002CC96A /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7D720F83BBB002CC96A /* UIImage+Size.swift */; };
+		5FECF7DA20F83E3A002CC96A /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7D920F83E3A002CC96A /* StorageReference+Post.swift */; };
+		5FECF7DC20F84046002CC96A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FECF7DB20F84046002CC96A /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +53,12 @@
 		5FECF7CB20F7D6BA002CC96A /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		5FECF7CD20F80238002CC96A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5FECF7CF20F80579002CC96A /* MGPhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGPhotoHelper.swift; sourceTree = "<group>"; };
+		5FECF7D120F83465002CC96A /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		5FECF7D320F835DD002CC96A /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		5FECF7D520F83774002CC96A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5FECF7D720F83BBB002CC96A /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
+		5FECF7D920F83E3A002CC96A /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
+		5FECF7DB20F84046002CC96A /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DD243F438FABFD3D40925B95 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				5FECF7C520F7CC02002CC96A /* Storyboard+Utility.swift */,
+				5FECF7D720F83BBB002CC96A /* UIImage+Size.swift */,
+				5FECF7D920F83E3A002CC96A /* StorageReference+Post.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				5FECF7BD20F56E20002CC96A /* User.swift */,
+				5FECF7D520F83774002CC96A /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				5FECF7C120F7BA11002CC96A /* UserService.swift */,
+				5FECF7D120F83465002CC96A /* StorageService.swift */,
+				5FECF7D320F835DD002CC96A /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -147,6 +164,7 @@
 				5FECF7A620F525C7002CC96A /* LaunchScreen.storyboard */,
 				5FECF7B920F53212002CC96A /* Login.storyboard */,
 				5FECF7C720F7D020002CC96A /* Main.storyboard */,
+				5FECF7DB20F84046002CC96A /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -249,6 +267,7 @@
 				5FECF7A820F525C7002CC96A /* LaunchScreen.storyboard in Resources */,
 				5FECF7C820F7D020002CC96A /* Main.storyboard in Resources */,
 				5FECF7B020F529AA002CC96A /* GoogleService-Info.plist in Resources */,
+				5FECF7DC20F84046002CC96A /* Home.storyboard in Resources */,
 				5FECF7A520F525C7002CC96A /* Assets.xcassets in Resources */,
 				5FECF7BA20F53212002CC96A /* Login.storyboard in Resources */,
 			);
@@ -325,14 +344,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FECF7BC20F53353002CC96A /* LoginViewController.swift in Sources */,
+				5FECF7D220F83465002CC96A /* StorageService.swift in Sources */,
 				5FECF7C220F7BA11002CC96A /* UserService.swift in Sources */,
 				5FECF7CE20F80238002CC96A /* MainTabBarController.swift in Sources */,
 				5FECF7C620F7CC02002CC96A /* Storyboard+Utility.swift in Sources */,
+				5FECF7D620F83774002CC96A /* Post.swift in Sources */,
+				5FECF7D820F83BBB002CC96A /* UIImage+Size.swift in Sources */,
 				5FECF7CA20F7D6AA002CC96A /* HomeViewController.swift in Sources */,
 				5FECF7D020F80579002CC96A /* MGPhotoHelper.swift in Sources */,
 				5FECF79E20F525C6002CC96A /* AppDelegate.swift in Sources */,
 				5FECF7CC20F7D6BA002CC96A /* FindFriendsViewController.swift in Sources */,
+				5FECF7DA20F83E3A002CC96A /* StorageReference+Post.swift in Sources */,
 				5FECF7C420F7CA9C002CC96A /* Constants.swift in Sources */,
+				5FECF7D420F835DD002CC96A /* PostService.swift in Sources */,
 				5FECF7C020F57878002CC96A /* CreateUsernameViewController.swift in Sources */,
 				5FECF7BE20F56E20002CC96A /* User.swift in Sources */,
 			);
