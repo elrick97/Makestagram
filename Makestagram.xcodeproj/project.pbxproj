@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2FABBB8BCF6116DBA7338FEC /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A87B634196B68A79B0F25C /* Pods_Makestagram.framework */; };
+		5F42A2EA20F9201C00A0DEC4 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F42A2E920F9201C00A0DEC4 /* PostActionCell.swift */; };
+		5F6A7D8720F919D300791FDA /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6A7D8620F919D300791FDA /* PostHeaderCell.swift */; };
 		5FECF79E20F525C6002CC96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF79D20F525C6002CC96A /* AppDelegate.swift */; };
 		5FECF7A520F525C7002CC96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FECF7A420F525C7002CC96A /* Assets.xcassets */; };
 		5FECF7A820F525C7002CC96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FECF7A620F525C7002CC96A /* LaunchScreen.storyboard */; };
@@ -30,11 +32,14 @@
 		5FECF7D820F83BBB002CC96A /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7D720F83BBB002CC96A /* UIImage+Size.swift */; };
 		5FECF7DA20F83E3A002CC96A /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7D920F83E3A002CC96A /* StorageReference+Post.swift */; };
 		5FECF7DC20F84046002CC96A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FECF7DB20F84046002CC96A /* Home.storyboard */; };
+		5FECF7DE20F9127C002CC96A /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECF7DD20F9127C002CC96A /* PostImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43A87B634196B68A79B0F25C /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A04DC91F4AD933C8E50F826 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		5F42A2E920F9201C00A0DEC4 /* PostActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
+		5F6A7D8620F919D300791FDA /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
 		5FECF79A20F525C6002CC96A /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FECF79D20F525C6002CC96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FECF7A420F525C7002CC96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 		5FECF7D720F83BBB002CC96A /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		5FECF7D920F83E3A002CC96A /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		5FECF7DB20F84046002CC96A /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		5FECF7DD20F9127C002CC96A /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		DD243F438FABFD3D40925B95 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +188,9 @@
 		5FECF7B820F52D06002CC96A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5FECF7DD20F9127C002CC96A /* PostImageCell.swift */,
+				5F6A7D8620F919D300791FDA /* PostHeaderCell.swift */,
+				5F42A2E920F9201C00A0DEC4 /* PostActionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +294,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -292,6 +302,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -348,7 +359,9 @@
 				5FECF7C220F7BA11002CC96A /* UserService.swift in Sources */,
 				5FECF7CE20F80238002CC96A /* MainTabBarController.swift in Sources */,
 				5FECF7C620F7CC02002CC96A /* Storyboard+Utility.swift in Sources */,
+				5F42A2EA20F9201C00A0DEC4 /* PostActionCell.swift in Sources */,
 				5FECF7D620F83774002CC96A /* Post.swift in Sources */,
+				5FECF7DE20F9127C002CC96A /* PostImageCell.swift in Sources */,
 				5FECF7D820F83BBB002CC96A /* UIImage+Size.swift in Sources */,
 				5FECF7CA20F7D6AA002CC96A /* HomeViewController.swift in Sources */,
 				5FECF7D020F80579002CC96A /* MGPhotoHelper.swift in Sources */,
@@ -358,6 +371,7 @@
 				5FECF7C420F7CA9C002CC96A /* Constants.swift in Sources */,
 				5FECF7D420F835DD002CC96A /* PostService.swift in Sources */,
 				5FECF7C020F57878002CC96A /* CreateUsernameViewController.swift in Sources */,
+				5F6A7D8720F919D300791FDA /* PostHeaderCell.swift in Sources */,
 				5FECF7BE20F56E20002CC96A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
